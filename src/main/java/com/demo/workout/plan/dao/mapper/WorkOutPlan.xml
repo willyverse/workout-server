@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.demo.workout.plan.dao">
+
+    <select id="getWorkOutPlan" parameterType="com.demo.workout.plan.dto.WorkOutPlanDto" resultType="com.demo.workout.plan.dto.WorkOutPlanDto">
+        SELECT      *
+        FROM        WORK_OUT_PLAN
+        WHERE       1 = 1
+        AND         USER_ID         = #{userId}
+        AND         WORK_OUT_DATE   = #{workOutDate}
+        AND         ROUND_NUM       = #{roundNum}
+    </select>
+
+</mapper>
