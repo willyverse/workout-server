@@ -2,7 +2,6 @@ package com.demo.workout.plan.service;
 
 import com.demo.workout.plan.dao.WorkOutPlanDao;
 import com.demo.workout.plan.dto.WorkOutPlanDto;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

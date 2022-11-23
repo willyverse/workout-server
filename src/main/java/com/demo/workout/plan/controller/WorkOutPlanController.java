@@ -11,6 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/plan")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class WorkOutPlanController {
 
     @Autowired
